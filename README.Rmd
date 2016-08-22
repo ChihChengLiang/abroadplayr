@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE, message=F, warning=F}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+library(dplyr)
+library(abroadplayr)
+```
+
+# 公務出國報告資料集 R 套件
+
+[公務出國報告查詢統計網](http://catding.twbbs.org/report/index.php) 的資料集
+
+
+```{r echo=FALSE}
+df<- reports
+df %>% glimpse()
+```
+
+# 安裝
+
+```{r eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("ChihChengLiang/abroadplayr")
+```
+
+# 討論
+
+- [臉書社團](https://www.facebook.com/groups/1125748634116081/)
+- [Hackpad](https://g0v.hackpad.com/E0G6gZDQ2ZZ)
