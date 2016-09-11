@@ -6,9 +6,9 @@
 \title{ROC Municipal Financial Statistics}
 \format{Data frame with columns
 \describe{
- \item{year}
- \item{cities}
- items of statistics, check foot note for detail
+\item{year}
+\item{cities}
+\item{financial report items}{items of statistics, check foot note for detail}
 }}
 \source{
 \url{http://statdb.dgbas.gov.tw/pxweb/dialog/statfile9.asp}, downloaded 2016-09-11
