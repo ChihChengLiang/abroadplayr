@@ -1,7 +1,7 @@
 Package: abroadplayr
 Type: Package
 Title: Dataset of ROC Government Travel Reports
-Version: 0.1.0
+Version: 0.2.0
 Author: Chih-Cheng Liang
 Maintainer: Chih-Cheng Liang <chihchengliang@gmail.com>
 Description: Dataset of ROC Government Travel Reports

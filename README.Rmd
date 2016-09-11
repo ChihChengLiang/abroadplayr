@@ -35,3 +35,12 @@ devtools::install_github("ChihChengLiang/abroadplayr")
 
 - [臉書社團](https://www.facebook.com/groups/1125748634116081/)
 - [Hackpad](https://g0v.hackpad.com/E0G6gZDQ2ZZ)
+
+# 更多用途
+
+
+若要比較地方財政，本套件也準備了歷年地方財政的資料
+
+```{r municipal}
+municipal_finance %>% glimpse()
+```
