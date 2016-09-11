@@ -8,3 +8,5 @@ Description: Dataset of ROC Government Travel Reports
 License: WTFPL
 LazyData: TRUE
 RoxygenNote: 5.0.1
+URL: https://github.com/ChihChengLiang/abroadplayr
+BugReports: https://github.com/ChihChengLiang/abroadplayr/issues
