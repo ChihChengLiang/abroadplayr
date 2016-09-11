@@ -3,7 +3,9 @@
 公務出國報告資料集 R 套件
 =========================
 
-[公務出國報告查詢統計網](http://catding.twbbs.org/report/index.php) 的資料集
+快速上手！直接動手做啟發靈感： [重製菜市場政治學的文章: 在爬完近六萬筆的公務出國報告後，我們發現什麼趨勢？](https://github.com/ChihChengLiang/reproduce_gov_travel_reports)
+
+這個套件旨在降低分析公務出國考察報告的門檻，讓資料分析者能夠略過爬蟲、清理資料，直接進入視覺化與統計分析。套件包含最重要 [公務出國報告查詢統計網](http://catding.twbbs.org/report/index.php) 中所使用的資料集，係由公務出國考察統計網團隊從中央與各地方政府的網站爬得的公務考察報告。以下是資料集概要：
 
     #> Observations: 56,593
     #> Variables: 27
@@ -46,13 +48,15 @@ devtools::install_github("ChihChengLiang/abroadplayr")
 討論
 ====
 
+臉書以及 Hackpad 匯聚需多關心這個議題者，可多與他們接觸。
+
 -   [臉書社團](https://www.facebook.com/groups/1125748634116081/)
 -   [Hackpad](https://g0v.hackpad.com/E0G6gZDQ2ZZ)
 
 更多用途
 ========
 
-若要比較地方財政，本套件也準備了歷年地方財政的資料
+要比較地方政府公務人員出國考察的績效，不免會要使用到地方財政的資訊。本套件也包含從主計處取得歷年地方財政的資料供分析。
 
 ``` r
 municipal_finance %>% glimpse()
