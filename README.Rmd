@@ -4,14 +4,15 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE, message=F, warning=F}
+```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "README-",
+  message = FALSE,
+  warning = FALSE
 )
-library(dplyr)
-library(abroadplayr)
+
 ```
 
 # 公務出國報告資料集 R 套件
@@ -20,14 +21,16 @@ library(abroadplayr)
 
 這個套件旨在降低分析公務出國考察報告的門檻，讓資料分析者能夠略過爬蟲、清理資料，直接進入視覺化與統計分析。套件包含最重要 [公務出國報告查詢統計網](http://catding.twbbs.org/report/index.php) 中所使用的資料集，係由公務出國考察統計網團隊從中央與各地方政府的網站爬得的公務考察報告。以下是資料集概要： 
 
-```{r echo=FALSE}
-df<- reports
+```{r reports}
+library(dplyr)
+library(abroadplayr)
+df <- reports
 df %>% glimpse()
 ```
 
 # 安裝
 
-```{r eval=FALSE}
+```{r installation, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("ChihChengLiang/abroadplayr")
 ```
