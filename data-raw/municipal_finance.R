@@ -82,7 +82,12 @@ extract_df_from_group <- function(group){
 
 foot_note_df <- foot_notes_group %>%
   lapply(extract_df_from_group) %>%
-  bind_rows()
+  bind_rows() %>%
+  mutate_if(
+    function(col) is.character(head(col)),
+    function(col) `Encoding<-`(col, "UTF-8")
+  )
+
 
 devtools::use_data(municipal_finance, overwrite = T)
 devtools::use_data(foot_note_df, overwrite = T)
