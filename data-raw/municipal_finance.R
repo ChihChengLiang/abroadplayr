@@ -91,4 +91,3 @@ foot_note_df <- foot_notes_group %>%
 
 devtools::use_data(municipal_finance, overwrite = T)
 devtools::use_data(foot_note_df, overwrite = T)
-write(foot_notes, file = "data/foot_notes.txt")

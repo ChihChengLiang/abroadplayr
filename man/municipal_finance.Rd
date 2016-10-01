@@ -27,7 +27,6 @@ and Statistics, Executive Yuan.
    # Here are some options you can view the foot note
    View(foot_note_df)
    foot_note_df[46, ]
-   write(foot_notes, "foot_notes.txt")
 }
 \keyword{datasets}
 
