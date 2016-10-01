@@ -6,8 +6,8 @@
 \title{ROC Municipal Financial Statistics}
 \format{Data frame with columns
 \describe{
-\item{year}
-\item{cities}
+\item{year}{}
+\item{cities}{}
 \item{financial report items}{items of statistics, check foot note for detail}
 }}
 \source{
@@ -22,11 +22,10 @@ the website of Directorate General of Budget, Accounting
 and Statistics, Executive Yuan.
 }
 \examples{
-   municipal_finance[municipal_finance$year == 2015,]
-
-   # Here are some options you can view the foot note
-   View(foot_note_df)
-   foot_note_df[46, ]
+municipal_finance[municipal_finance$year == 2015,]
+# Here are some options you can view the foot note
+View(foot_note_df)
+foot_note_df[46, ]
 }
 \keyword{datasets}
 
