@@ -1,3 +1,7 @@
+# abroadplayr 0.2.1
+
+* fix encoding bug
+
 # abroadplayr 0.2.0
 
 * Add Municipal finance statistics
