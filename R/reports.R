@@ -37,3 +37,20 @@
 #' @examples
 #' reports_df<- reports
 "reports"
+
+#' Members of The Travel Reports
+#'
+#' Extracted from reports
+#'
+#' @format Data frame with columns
+#' \describe{
+#' \item{id}{Report id, join this id with table 'reports'}
+#' \item{member_name}{}
+#' \item{member_office}{}
+#' \item{member_unit}{}
+#' \item{member_job}{}
+#' \item{member_level}{}
+#' }
+#' @examples
+#' members
+"members"

@@ -2,6 +2,7 @@ library(dplyr)
 library(rlist)
 library(stringi)
 library(abroadplayr)
+library(tidyr)
 
 FIX <- list(
   "C09201174" = list(member_job = "副教授兼研發長,教授兼造船系主任,教授|前任研發長|系主任"),
@@ -63,3 +64,5 @@ members_raw <- reports %>%
 
 
 members <- members_raw %>% rowwise() %>% do(to_member_df(.)) %>% ungroup()
+
+devtools::use_data(members, overwrite = T)
