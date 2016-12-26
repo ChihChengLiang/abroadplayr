@@ -28,6 +28,11 @@ df <- reports
 df %>% glimpse()
 ```
 
+```{r members}
+members %>% glimpse()
+```
+
+
 # 安裝
 
 ```{r installation, eval=FALSE}
